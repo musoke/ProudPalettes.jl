@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - "ci/*"
     tags: ['*']
   pull_request:
   workflow_dispatch:
@@ -44,6 +45,22 @@ jobs:
           files: lcov.info
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: false
+
+  downgrade:
+    name: Downgrade Compat
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1'
+      - uses: julia-actions/cache@v2
+      - uses: julia-actions/julia-downgrade-compat@v1
+        with:
+          skip: Pkg, TOML, Dates, LinearAlgebra, Random, Statistics, Test
+      - uses: julia-actions/julia-buildpkg@v1
+      - uses: julia-actions/julia-runtest@v1
+
   docs:
     name: Documentation
     runs-on: ubuntu-latest
