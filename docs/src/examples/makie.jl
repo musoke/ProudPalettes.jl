@@ -24,7 +24,7 @@ ax = Axis(fig[1, 1], palette = (patchcolor = p,))
 
 for (i, _) in enumerate(p)
     y = @. sin(x) + i - 1
-    band!(ax, x, y, y .+ 1,)
+    band!(ax, x, y, y .+ 1)
 end
 
 fig

@@ -13,17 +13,12 @@ for (root, _, files) ∈ walkdir(LITERATE_INPUT), file ∈ files
     # full path to a literate script
     ipath = joinpath(root, file)
     # generated output path
-    opath = splitdir(replace(ipath, LITERATE_INPUT=>LITERATE_OUTPUT))[1]
+    opath = splitdir(replace(ipath, LITERATE_INPUT => LITERATE_OUTPUT))[1]
     # generate the markdown file calling Literate
     Literate.markdown(ipath, opath)
 end
 
-DocMeta.setdocmeta!(
-    ProudPalettes,
-    :DocTestSetup,
-    :(using ProudPalettes);
-    recursive = true,
-)
+DocMeta.setdocmeta!(ProudPalettes, :DocTestSetup, :(using ProudPalettes); recursive = true)
 
 makedocs(;
     modules = [ProudPalettes],
@@ -34,9 +29,7 @@ makedocs(;
         edit_link = "main",
         assets = String[],
     ),
-    pages = ["Home" => "index.md",
-             "Examples" => Any["Makie.jl" => "examples/makie.md"],
-            ],
+    pages = ["Home" => "index.md", "Examples" => Any["Makie.jl"=>"examples/makie.md"]],
 )
 
 deploydocs(; repo = "github.com/musoke/ProudPalettes.jl", devbranch = "main")
