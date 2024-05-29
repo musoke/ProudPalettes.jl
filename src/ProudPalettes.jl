@@ -4,7 +4,7 @@ Colour palettes
 For flags composed of horizontal stripes, the colors in each array are ordered from bottom to top.
 This results in color bars with an intuitive order.
 """
-module PrideColorSchemes
+module ProudPalettes
 
 import Colors
 using Colors: @colorant_str
@@ -53,7 +53,7 @@ trans = [
 # Examples
 
 ```jldoctest
-julia> using PrideColorSchemes
+julia> using ProudPalettes
 
 julia> PROUD_PALETTES[:pride]
 6-element Array{RGB,1} with eltype ColorTypes.RGB:

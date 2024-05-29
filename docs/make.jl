@@ -1,4 +1,4 @@
-using PrideColorSchemes
+using ProudPalettes
 using Documenter
 using Literate
 
@@ -19,18 +19,18 @@ for (root, _, files) ∈ walkdir(LITERATE_INPUT), file ∈ files
 end
 
 DocMeta.setdocmeta!(
-    PrideColorSchemes,
+    ProudPalettes,
     :DocTestSetup,
-    :(using PrideColorSchemes);
+    :(using ProudPalettes);
     recursive = true,
 )
 
 makedocs(;
-    modules = [PrideColorSchemes],
+    modules = [ProudPalettes],
     authors = "Nathan Musoke <nathan.musoke@gmail.com> and contributors",
-    sitename = "PrideColorSchemes.jl",
+    sitename = "ProudPalettes.jl",
     format = Documenter.HTML(;
-        canonical = "https://musoke.github.io/PrideColorSchemes.jl",
+        canonical = "https://musoke.github.io/ProudPalettes.jl",
         edit_link = "main",
         assets = String[],
     ),
@@ -39,4 +39,4 @@ makedocs(;
             ],
 )
 
-deploydocs(; repo = "github.com/musoke/PrideColorSchemes.jl", devbranch = "main")
+deploydocs(; repo = "github.com/musoke/ProudPalettes.jl", devbranch = "main")

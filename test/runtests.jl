@@ -1,12 +1,12 @@
 using Aqua
 using Documenter
-using PrideColorSchemes
+using ProudPalettes
 using Test
 
-doctest(PrideColorSchemes)
+doctest(ProudPalettes)
 
-@testset "PrideColorSchemes.jl" begin
+@testset "ProudPalettes.jl" begin
     # Write your tests here.
 end
 
-Aqua.test_all(PrideColorSchemes)
+Aqua.test_all(ProudPalettes)

@@ -3,7 +3,7 @@ CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 DocumenterInterLinks = "d12716ef-a0f6-4df4-a9f1-a5a34e75c656"
 Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
-PrideColorSchemes = "61d02e3d-8de9-45ce-a87b-73174b99cb55"
+ProudPalettes = "61d02e3d-8de9-45ce-a87b-73174b99cb55"
 
 [compat]
 Literate = "2.18"

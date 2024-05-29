@@ -1,7 +1,7 @@
 # # Use with Makie.jl
 
 using CairoMakie
-using PrideColorSchemes
+using ProudPalettes
 
 # The palettes defined in [`PROUD_PALETTES`](@ref) can be used to set colors in
 # [Makie](https://github.com/MakieOrg/Makie.jl) plots.

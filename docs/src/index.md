@@ -1,10 +1,10 @@
 ```@meta
-CurrentModule = PrideColorSchemes
+CurrentModule = ProudPalettes
 ```
 
-# PrideColorSchemes
+# ProudPalettes
 
-Documentation for [PrideColorSchemes](https://github.com/musoke/PrideColorSchemes.jl).
+Documentation for [ProudPalettes](https://github.com/musoke/ProudPalettes.jl).
 
 
 # API
@@ -13,5 +13,5 @@ Documentation for [PrideColorSchemes](https://github.com/musoke/PrideColorScheme
 ```
 
 ```@autodocs
-Modules = [PrideColorSchemes]
+Modules = [ProudPalettes]
 ```
