@@ -22,9 +22,9 @@ p = PROUD_PALETTES[:rainbow]
 fig = Figure()
 ax = Axis(fig[1, 1], palette = (patchcolor = p,))
 
+y = sin.(x)
 for (i, _) in enumerate(p)
-    y = @. sin(x) + i - 1
-    band!(ax, x, y, y .+ 1)
+    band!(ax, x, y .+ i, y .+ i .+ 1)
 end
 
 fig
