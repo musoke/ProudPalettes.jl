@@ -5,6 +5,9 @@
 [![Build Status](https://github.com/musoke/ProudPalettes.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/musoke/ProudPalettes.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/musoke/ProudPalettes.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/musoke/ProudPalettes.jl)
 
+ProudPalettes is a [Julia](https://julialang.org/) package providing color palettes derived from pride flags.
+
+[The documentation](https://musoke.github.io/ProudPalettes.jl) has details and examples.
 
 # Licence
 
