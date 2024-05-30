@@ -18,9 +18,9 @@ plot!(x, sin, color = PROUD_PALETTES[:rainbow][2])
 palette = PROUD_PALETTES[:rainbow]
 p = plot(palette = palette)
 
+y = @. sin(x) - 1
 for (i, _) in enumerate(palette)
-    y = @. sin(x) + i - 1
-    plot!(x, y, ribbon = 0.4)
+    plot!(x, y .+ i, ribbon = 0.4)
 end
 
 p
