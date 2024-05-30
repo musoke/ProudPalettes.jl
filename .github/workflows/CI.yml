@@ -89,6 +89,6 @@ jobs:
         shell: julia --project=docs --color=yes {0}
         run: |
           using Documenter: DocMeta, doctest
-          using PrideColorSchemes
-          DocMeta.setdocmeta!(PrideColorSchemes, :DocTestSetup, :(using PrideColorSchemes); recursive=true)
-          doctest(PrideColorSchemes)
+          using ProudPalettes
+          DocMeta.setdocmeta!(ProudPalettes, :DocTestSetup, :(using ProudPalettes); recursive=true)
+          doctest(ProudPalettes)
