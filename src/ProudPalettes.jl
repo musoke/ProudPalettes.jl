@@ -52,17 +52,22 @@ trans = [
 
 # Examples
 
+The available keys are
 ```jldoctest
 julia> using ProudPalettes
 
-julia> PROUD_PALETTES[:pride]
-6-element Array{RGB,1} with eltype ColorTypes.RGB:
- RGB{N0f8}(0.459,0.027,0.529)
- RGB{N0f8}(0.0,0.302,1.0)
- RGB{N0f8}(0.0,0.502,0.149)
- RGB{N0f8}(1.0,0.929,0.0)
- RGB{N0f8}(1.0,0.549,0.0)
- RGB{N0f8}(0.894,0.012,0.012)
+julia> keys(PROUD_PALETTES)
+KeySet for a Dict{Symbol, Vector{ColorTypes.RGB}} with 10 entries. Keys:
+  :pride_progress
+  :rainbow
+  :pride6
+  :trans
+  :bi
+  :pride7
+  :pan
+  :pride
+  :nonbinary
+  :pride8
 
 ```
 """
