@@ -5,6 +5,11 @@
 [![Build Status](https://github.com/musoke/ProudPalettes.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/musoke/ProudPalettes.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Coverage](https://codecov.io/gh/musoke/ProudPalettes.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/musoke/ProudPalettes.jl)
 
-## Citing
 
-See [`CITATION.bib`](CITATION.bib) for the relevant reference(s).
+# Licence
+
+The code in this package is provided under the MIT license.
+Please open an issue if an alternative license would facilitate use of this package.
+
+The flags and symbols from which the palettes are constructed are independent of this package.
+The authors of this package do not claim copyright or authorship of the respective colors and palettes.
