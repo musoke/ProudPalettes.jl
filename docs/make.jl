@@ -29,7 +29,10 @@ makedocs(;
         edit_link = "main",
         assets = String[],
     ),
-    pages = ["Home" => "index.md", "Examples" => Any["Makie.jl"=>"examples/makie.md"]],
+    pages = [
+        "Home" => "index.md",
+        "Examples" => Any["Makie.jl"=>"examples/makie.md", "Plots.jl"=>"examples/plots.md"],
+    ],
 )
 
 deploydocs(; repo = "github.com/musoke/ProudPalettes.jl", devbranch = "main")
