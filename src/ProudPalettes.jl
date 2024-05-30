@@ -56,18 +56,18 @@ The available keys are
 ```jldoctest
 julia> using ProudPalettes
 
-julia> keys(PROUD_PALETTES)
-KeySet for a Dict{Symbol, Vector{ColorTypes.RGB}} with 10 entries. Keys:
-  :pride_progress
-  :rainbow
-  :pride6
-  :trans
-  :bi
-  :pride7
-  :pan
-  :pride
-  :nonbinary
-  :pride8
+julia> keys(PROUD_PALETTES) |> collect |> sort
+10-element Vector{Symbol}:
+ :bi
+ :nonbinary
+ :pan
+ :pride
+ :pride6
+ :pride7
+ :pride8
+ :pride_progress
+ :rainbow
+ :trans
 
 ```
 """
@@ -82,8 +82,8 @@ const PROUD_PALETTES = Dict{Symbol,Vector{Colors.RGB}}(
     :pride8 => pride8,
     :pride_progress =>
         [pride6..., trans[begin:begin+3]..., colorant"brown", colorant"black"],
-    :trans => trans,
     :rainbow => pride6,
+    :trans => trans,
 )
 
 include("precompile.jl")
