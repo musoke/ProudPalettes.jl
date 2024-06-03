@@ -45,6 +45,19 @@ trans = [
     colorant"#5BCEFA",
 ]
 
+# Sapphic three color flag with pink and off-white color codes from
+# https://lgbtqia.fandom.com/wiki/Sapphic
+sapphic = [colorant"#FD8CAA", colorant"#FBF2FF", colorant"#FD8CAA"]
+
+# Sapphic five color scheme with pink and off-white color codes as above, but
+# including purple to represent the simplified violet flower as in
+# https://lgbtqia.fandom.com/wiki/Sapphic
+sapphic5 = [colorant"#FD8CAA", colorant"#FBF2FF", colorant"#C86BC6", colorant"#FBF2FF", colorant"#FD8CAA"]
+
+# Community lesbian pride flag with color codes from
+# https://lgbtqia.fandom.com/wiki/Lesbian
+lesbian = [colorant"#D42C00", colorant"#FD9855", colorant"#FFFFFF", colorant"#D161A2", colorant"#A20161"]
+
 """
     const PROUD_PALETTES::Dict{Symbol,Vector{Colors.RGB}}
 
@@ -57,8 +70,9 @@ The available keys are
 julia> using ProudPalettes
 
 julia> keys(PROUD_PALETTES) |> collect |> sort
-10-element Vector{Symbol}:
+13-element Vector{Symbol}:
  :bi
+ :lesbian
  :nonbinary
  :pan
  :pride
@@ -67,6 +81,8 @@ julia> keys(PROUD_PALETTES) |> collect |> sort
  :pride8
  :pride_progress
  :rainbow
+ :sapphic
+ :sapphic5
  :trans
 
 ```
@@ -84,6 +100,9 @@ const PROUD_PALETTES = Dict{Symbol,Vector{Colors.RGB}}(
         [pride6..., trans[begin:begin+3]..., colorant"brown", colorant"black"],
     :rainbow => pride6,
     :trans => trans,
+    :sapphic => sapphic,
+    :sapphic5 => sapphic5,
+    :lesbian => lesbian,
 )
 
 include("precompile.jl")
