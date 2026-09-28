@@ -32,11 +32,7 @@ jobs:
           - macOS-latest
           - windows-latest
         arch:
-          - x64
-        exclude:
-          # https://discourse.julialang.org/t/how-to-fix-github-actions-ci-failures-with-julia-1-6-or-1-7-on-macos-latest-and-macos-14/117019
-          - github-runner: macos-latest # Apple Silicon
-            julia-version: '1.6'
+          - default
     steps:
       - uses: actions/checkout@v7
       - uses: julia-actions/setup-julia@v3
