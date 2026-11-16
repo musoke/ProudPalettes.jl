@@ -9,4 +9,4 @@ doctest(ProudPalettes)
     # Write your tests here.
 end
 
-Aqua.test_all(ProudPalettes; persistent_tasks=false)
+Aqua.test_all(ProudPalettes)
